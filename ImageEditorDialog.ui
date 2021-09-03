@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageEditorDialog</class>
+ <widget class="QDialog" name="ImageEditorDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>175</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_saturation">
+       <item>
+        <widget class="QLabel" name="label_saturation">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Saturation</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDial" name="dial_saturation">
+         <property name="maximum">
+          <number>255</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_hue">
+       <item>
+        <widget class="QLabel" name="label_hue">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Hue</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDial" name="dial_hue">
+         <property name="maximum">
+          <number>359</number>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item alignment="Qt::AlignHCenter|Qt::AlignBottom">
+    <widget class="QPushButton" name="pushButton_close">
+     <property name="maximumSize">
+      <size>
+       <width>100</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Close</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
