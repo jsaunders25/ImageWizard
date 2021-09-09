@@ -6,7 +6,9 @@ To build and run this Qt application, using Qt Creator would be easiest. Otherwi
 
 My Build Steps are:
 qmake.exe ImageWizard.pro
+
 mingw32-make.exe -j8 in X:\Qt Projects\build-ImageWizard-Desktop_Qt_6_1_2_MinGW_64_bit-Debug
+
 The directory above is my own, other users can choose another.
 
 Regarding use of FFMPEG
@@ -16,8 +18,13 @@ Regarding YUV File
 I did not develop a way to view the YUV file format.
 
 Steps to Use:
+
 Load a JPEG or PNG either by dragging and dropping into app, hitting Ctrl+O, or using dropdown menu
+
 Under Edit dropdown, user can modify the RGB image
+
 Or user can convert the current loaded image into a YUV image (this is done in the application directory)
+
 Then the user can edit the YUV's saturation, or convert back to RGB. The new RGB image will be loaded automatically
+
 Finally, user can save the image as a JPEG or PNG
