@@ -17,12 +17,13 @@ public:
 
 private slots:
     // File menu actions
-    void loadImage();
-    void saveImage();
+    void selectImageFile();
+    void loadImage(QString file);
+    void loadImage(QImage image);
+    void saveImageAs();
     void exit();
 
     // Edit menu actions
-    void convertImage();
     void openImageEditor();
 
     // Image modifications
@@ -30,9 +31,14 @@ private slots:
     void modifyHue(int hue);
     void convertRGBtoYUV();
     void convertYUVtoRGB();
+    void modifyYUVSaturation();
 
 private:
-    Ui::MainWindow *ui;
-
+    Ui::MainWindow *ui;    
+    void dragEnterEvent(QDragEnterEvent *event);
+    void dropEvent(QDropEvent *event);
+    bool saveImage(QString file_path);
+    void delay();
+    QString getImageResolution();   // returns as "<width>x<height>"
 };
 #endif // MAINWINDOW_H
