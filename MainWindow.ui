@@ -15,10 +15,10 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
-    <item>
+    <item alignment="Qt::AlignHCenter">
      <widget class="QLabel" name="label_image">
       <property name="text">
-       <string/>
+       <string>Drag and Drop a JPEG or PNG here, or hit Ctrl + O</string>
       </property>
      </widget>
     </item>
@@ -48,6 +48,8 @@
     </property>
     <addaction name="actionConvert"/>
     <addaction name="actionModify"/>
+    <addaction name="actionConvertYUV"/>
+    <addaction name="actionModifyYUV"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -68,12 +70,12 @@
   </action>
   <action name="actionConvert">
    <property name="text">
-    <string>Convert Image</string>
+    <string>Convert RGB Image</string>
    </property>
   </action>
   <action name="actionModify">
    <property name="text">
-    <string>Modify Image</string>
+    <string>Modify RGB Image</string>
    </property>
    <property name="toolTip">
     <string>Modify Image</string>
@@ -82,6 +84,16 @@
   <action name="actionSave">
    <property name="text">
     <string>Save As</string>
+   </property>
+  </action>
+  <action name="actionConvertYUV">
+   <property name="text">
+    <string>Convert YUV Image</string>
+   </property>
+  </action>
+  <action name="actionModifyYUV">
+   <property name="text">
+    <string>Modify YUV Image</string>
    </property>
   </action>
  </widget>
